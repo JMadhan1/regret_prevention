@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 import json
 import os
@@ -9,7 +9,8 @@ from pattern_extractor import PatternExtractor
 
 load_dotenv()
 
-app = Flask(__name__)
+# Serve React frontend from dist folder
+app = Flask(__name__, static_folder='../frontend/dist', static_url_path='')
 CORS(app)
 
 # Initialize matcher (will be loaded when patterns exist)
@@ -193,9 +194,20 @@ def trigger_extraction():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
+# Serve React App
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def serve(path):
+    """Serve React frontend"""
+    if path != "" and os.path.exists(os.path.join(app.static_folder, path)):
+        return send_from_directory(app.static_folder, path)
+    else:
+        return send_from_directory(app.static_folder, 'index.html')
+
 if __name__ == '__main__':
     # Try to initialize matcher on startup
     init_matcher()
     
     port = int(os.getenv('FLASK_PORT', 5000))
     app.run(debug=True, port=port, host='0.0.0.0')
+

@@ -1,9 +1,24 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import axios from 'axios'
 
 function QuestionnaireForm({ onComplete }) {
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState(null)
+    const [showGoalSuggestions, setShowGoalSuggestions] = useState(false)
+
+    // Goal suggestions
+    const goalSuggestions = [
+        'Financial independence',
+        'Becoming an expert in a specific field',
+        'Work-life balance',
+        'Starting a family by 30',
+        'Entrepreneurial ventures',
+        'Minimizing debt',
+        'Geographic flexibility',
+        'Personal growth and self-improvement',
+        'Building meaningful relationships',
+        'Creative fulfillment'
+    ]
 
     const [formData, setFormData] = useState({
         age: '',
@@ -17,10 +32,32 @@ function QuestionnaireForm({ onComplete }) {
         category: 'lifestyle'
     })
 
+    // Load saved data from localStorage on mount
+    useEffect(() => {
+        const savedData = localStorage.getItem('userProfile')
+        if (savedData) {
+            const profile = JSON.parse(savedData)
+            setFormData(prev => ({
+                ...prev,
+                age: profile.age || '',
+                goals: profile.goals || ''
+            }))
+        }
+    }, [])
+
     const handleChange = (e) => {
         setFormData({
             ...formData,
             [e.target.name]: e.target.value
+        })
+    }
+
+    const addGoal = (goal) => {
+        const currentGoals = formData.goals
+        const newGoals = currentGoals ? `${currentGoals}, ${goal}` : goal
+        setFormData({
+            ...formData,
+            goals: newGoals
         })
     }
 
@@ -47,6 +84,25 @@ function QuestionnaireForm({ onComplete }) {
             }
 
             const response = await axios.post('/api/analyze', requestData)
+
+            // Save user profile to localStorage
+            localStorage.setItem('userProfile', JSON.stringify({
+                age: formData.age,
+                goals: formData.goals
+            }))
+
+            // Save decision to history
+            const history = JSON.parse(localStorage.getItem('decisionHistory') || '[]')
+            history.unshift({
+                id: Date.now(),
+                date: new Date().toISOString(),
+                category: formData.category,
+                decision: formData.decision_description,
+                result: response.data
+            })
+            // Keep only last 10 decisions
+            localStorage.setItem('decisionHistory', JSON.stringify(history.slice(0, 10)))
+
             onComplete(response.data)
         } catch (err) {
             console.error('Analysis error:', err)
@@ -210,6 +266,35 @@ function QuestionnaireForm({ onComplete }) {
                             className="textarea-field"
                             placeholder="What matters most to you? What are you trying to achieve in life?"
                         />
+
+                        {/* Goal Suggestions */}
+                        <div className="mt-3">
+                            <button
+                                type="button"
+                                onClick={() => setShowGoalSuggestions(!showGoalSuggestions)}
+                                className="text-sm text-purple-600 hover:text-purple-700 font-medium flex items-center"
+                            >
+                                <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                                {showGoalSuggestions ? 'Hide' : 'Show'} Goal Suggestions
+                            </button>
+
+                            {showGoalSuggestions && (
+                                <div className="mt-3 flex flex-wrap gap-2 animate-fade-in">
+                                    {goalSuggestions.map((goal, index) => (
+                                        <button
+                                            key={index}
+                                            type="button"
+                                            onClick={() => addGoal(goal)}
+                                            className="px-3 py-1.5 bg-gradient-to-r from-purple-50 to-pink-50 hover:from-purple-100 hover:to-pink-100 text-purple-700 text-sm rounded-full border border-purple-200 hover:border-purple-300 transition-all duration-200 hover:scale-105"
+                                        >
+                                            + {goal}
+                                        </button>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
                     </div>
 
                     {/* Timeline */}
