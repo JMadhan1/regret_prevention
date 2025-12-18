@@ -1,0 +1,431 @@
+{
+    "extracted_at": "2024-01-15 10:00:00",
+    "total_patterns": 25,
+    "patterns": [
+        {
+            "age_when_decided": 22,
+            "age_when_regret_felt": 28,
+            "decision_made": "Stayed in safe corporate job instead of joining startup",
+            "situation_context": "Fresh graduate with job offer from both established company and early-stage startup",
+            "regret_severity": 7,
+            "regret_reason": "Missed opportunity for rapid growth and equity that would have been life-changing",
+            "pattern_tags": [
+                "career",
+                "risk-aversion",
+                "financial-opportunity"
+            ],
+            "decision_category": "career",
+            "source_post_id": "sample1",
+            "source_subreddit": "regret",
+            "original_score": 1250
+        },
+        {
+            "age_when_decided": 25,
+            "age_when_regret_felt": 30,
+            "decision_made": "Didn't pursue relationship due to career focus",
+            "situation_context": "Met someone special but prioritized career advancement over relationship",
+            "regret_severity": 8,
+            "regret_reason": "Never found that connection again, career success felt hollow",
+            "pattern_tags": [
+                "relationship",
+                "work-life-balance",
+                "priorities"
+            ],
+            "decision_category": "relationship",
+            "source_post_id": "sample2",
+            "source_subreddit": "AskOldPeople",
+            "original_score": 2100
+        },
+        {
+            "age_when_decided": 18,
+            "age_when_regret_felt": 25,
+            "decision_made": "Chose college major based on parents' wishes",
+            "situation_context": "Wanted to study art but parents insisted on engineering",
+            "regret_severity": 9,
+            "regret_reason": "Spent years in a career I hated, eventually had to start over",
+            "pattern_tags": [
+                "education",
+                "parental-pressure",
+                "passion"
+            ],
+            "decision_category": "education",
+            "source_post_id": "sample3",
+            "source_subreddit": "careerguidance",
+            "original_score": 3400
+        },
+        {
+            "age_when_decided": 28,
+            "age_when_regret_felt": 35,
+            "decision_made": "Didn't invest in real estate when prices were low",
+            "situation_context": "Had savings but was afraid of taking on mortgage",
+            "regret_severity": 6,
+            "regret_reason": "Prices doubled, now priced out of market",
+            "pattern_tags": [
+                "financial",
+                "investment",
+                "fear"
+            ],
+            "decision_category": "financial",
+            "source_post_id": "sample4",
+            "source_subreddit": "regret",
+            "original_score": 890
+        },
+        {
+            "age_when_decided": 30,
+            "age_when_regret_felt": 32,
+            "decision_made": "Started own business without proper planning",
+            "situation_context": "Quit stable job to pursue entrepreneurship without savings or business plan",
+            "regret_severity": 8,
+            "regret_reason": "Business failed, lost savings, damaged credit, set back career",
+            "pattern_tags": [
+                "career",
+                "entrepreneurship",
+                "planning"
+            ],
+            "decision_category": "career",
+            "source_post_id": "sample5",
+            "source_subreddit": "careerguidance",
+            "original_score": 1560
+        },
+        {
+            "age_when_decided": 24,
+            "age_when_regret_felt": 40,
+            "decision_made": "Didn't prioritize health and fitness",
+            "situation_context": "Young and healthy, ignored exercise and diet",
+            "regret_severity": 7,
+            "regret_reason": "Developed chronic health issues that could have been prevented",
+            "pattern_tags": [
+                "health",
+                "prevention",
+                "long-term-thinking"
+            ],
+            "decision_category": "health",
+            "source_post_id": "sample6",
+            "source_subreddit": "AskOldPeople",
+            "original_score": 4200
+        },
+        {
+            "age_when_decided": 26,
+            "age_when_regret_felt": 29,
+            "decision_made": "Took high-paying job in city I hated",
+            "situation_context": "Chose salary over quality of life and location",
+            "regret_severity": 5,
+            "regret_reason": "Money wasn't worth the misery, eventually left anyway",
+            "pattern_tags": [
+                "career",
+                "lifestyle",
+                "money-vs-happiness"
+            ],
+            "decision_category": "lifestyle",
+            "source_post_id": "sample7",
+            "source_subreddit": "regret",
+            "original_score": 780
+        },
+        {
+            "age_when_decided": 21,
+            "age_when_regret_felt": 35,
+            "decision_made": "Didn't travel when I had the chance",
+            "situation_context": "Had time and some money but chose to save instead",
+            "regret_severity": 6,
+            "regret_reason": "Now have money but no time, family responsibilities make it impossible",
+            "pattern_tags": [
+                "lifestyle",
+                "timing",
+                "experiences"
+            ],
+            "decision_category": "lifestyle",
+            "source_post_id": "sample8",
+            "source_subreddit": "AskOldPeople",
+            "original_score": 2800
+        },
+        {
+            "age_when_decided": 27,
+            "age_when_regret_felt": 27,
+            "decision_made": "Got married too quickly",
+            "situation_context": "Married after 6 months of dating due to social pressure",
+            "regret_severity": 9,
+            "regret_reason": "Realized we were incompatible, painful divorce followed",
+            "pattern_tags": [
+                "relationship",
+                "rushing",
+                "social-pressure"
+            ],
+            "decision_category": "relationship",
+            "source_post_id": "sample9",
+            "source_subreddit": "relationships",
+            "original_score": 1900
+        },
+        {
+            "age_when_decided": 23,
+            "age_when_regret_felt": 30,
+            "decision_made": "Didn't learn to code when it was easier",
+            "situation_context": "Had opportunities to learn programming but thought it wasn't for me",
+            "regret_severity": 5,
+            "regret_reason": "Tech skills became essential, now much harder to learn",
+            "pattern_tags": [
+                "education",
+                "skills",
+                "future-proofing"
+            ],
+            "decision_category": "education",
+            "source_post_id": "sample10",
+            "source_subreddit": "careerguidance",
+            "original_score": 1200
+        },
+        {
+            "age_when_decided": 29,
+            "age_when_regret_felt": 38,
+            "decision_made": "Waited too long to have kids",
+            "situation_context": "Focused on career, kept delaying starting family",
+            "regret_severity": 8,
+            "regret_reason": "Fertility issues made it much harder, wished I'd started earlier",
+            "pattern_tags": [
+                "relationship",
+                "family",
+                "timing"
+            ],
+            "decision_category": "relationship",
+            "source_post_id": "sample11",
+            "source_subreddit": "AskOldPeople",
+            "original_score": 2300
+        },
+        {
+            "age_when_decided": 20,
+            "age_when_regret_felt": 26,
+            "decision_made": "Took on massive student loan debt",
+            "situation_context": "Went to expensive private school without considering alternatives",
+            "regret_severity": 7,
+            "regret_reason": "Debt limited life choices for years, could have gotten same education cheaper",
+            "pattern_tags": [
+                "financial",
+                "education",
+                "debt"
+            ],
+            "decision_category": "financial",
+            "source_post_id": "sample12",
+            "source_subreddit": "regret",
+            "original_score": 3100
+        },
+        {
+            "age_when_decided": 32,
+            "age_when_regret_felt": 45,
+            "decision_made": "Didn't maintain friendships",
+            "situation_context": "Got busy with work and family, let friendships fade",
+            "regret_severity": 6,
+            "regret_reason": "Feel isolated now, hard to make new friends at this age",
+            "pattern_tags": [
+                "relationship",
+                "social",
+                "priorities"
+            ],
+            "decision_category": "relationship",
+            "source_post_id": "sample13",
+            "source_subreddit": "AskOldPeople",
+            "original_score": 1800
+        },
+        {
+            "age_when_decided": 25,
+            "age_when_regret_felt": 28,
+            "decision_made": "Quit job without another lined up",
+            "situation_context": "Hated job and quit impulsively without backup plan",
+            "regret_severity": 6,
+            "regret_reason": "Struggled financially, gap in resume hurt future prospects",
+            "pattern_tags": [
+                "career",
+                "impulsivity",
+                "planning"
+            ],
+            "decision_category": "career",
+            "source_post_id": "sample14",
+            "source_subreddit": "careerguidance",
+            "original_score": 950
+        },
+        {
+            "age_when_decided": 35,
+            "age_when_regret_felt": 50,
+            "decision_made": "Didn't save for retirement early",
+            "situation_context": "Spent money freely in 30s, didn't think about retirement",
+            "regret_severity": 8,
+            "regret_reason": "Now facing retirement with inadequate savings, compound interest lost",
+            "pattern_tags": [
+                "financial",
+                "retirement",
+                "long-term-planning"
+            ],
+            "decision_category": "financial",
+            "source_post_id": "sample15",
+            "source_subreddit": "AskOldPeople",
+            "original_score": 5200
+        },
+        {
+            "age_when_decided": 22,
+            "age_when_regret_felt": 25,
+            "decision_made": "Stayed in toxic relationship too long",
+            "situation_context": "Knew relationship was bad but was afraid of being alone",
+            "regret_severity": 7,
+            "regret_reason": "Wasted years, damaged self-esteem, missed other opportunities",
+            "pattern_tags": [
+                "relationship",
+                "self-worth",
+                "fear"
+            ],
+            "decision_category": "relationship",
+            "source_post_id": "sample16",
+            "source_subreddit": "relationships",
+            "original_score": 2700
+        },
+        {
+            "age_when_decided": 28,
+            "age_when_regret_felt": 35,
+            "decision_made": "Didn't negotiate salary",
+            "situation_context": "Accepted first offer without negotiating",
+            "regret_severity": 5,
+            "regret_reason": "Left significant money on table, affected all future raises",
+            "pattern_tags": [
+                "career",
+                "financial",
+                "negotiation"
+            ],
+            "decision_category": "career",
+            "source_post_id": "sample17",
+            "source_subreddit": "careerguidance",
+            "original_score": 1400
+        },
+        {
+            "age_when_decided": 19,
+            "age_when_regret_felt": 30,
+            "decision_made": "Dropped out of college",
+            "situation_context": "Thought I didn't need degree, wanted to start working",
+            "regret_severity": 7,
+            "regret_reason": "Hit career ceiling, much harder to go back later",
+            "pattern_tags": [
+                "education",
+                "career",
+                "credentials"
+            ],
+            "decision_category": "education",
+            "source_post_id": "sample18",
+            "source_subreddit": "regret",
+            "original_score": 1600
+        },
+        {
+            "age_when_decided": 26,
+            "age_when_regret_felt": 32,
+            "decision_made": "Moved far from family for job",
+            "situation_context": "Took job across country, away from aging parents",
+            "regret_severity": 8,
+            "regret_reason": "Missed important family moments, parents' health declined",
+            "pattern_tags": [
+                "career",
+                "family",
+                "priorities"
+            ],
+            "decision_category": "lifestyle",
+            "source_post_id": "sample19",
+            "source_subreddit": "AskOldPeople",
+            "original_score": 2900
+        },
+        {
+            "age_when_decided": 24,
+            "age_when_regret_felt": 27,
+            "decision_made": "Bought expensive car I couldn't afford",
+            "situation_context": "Wanted to impress others, took on large car payment",
+            "regret_severity": 4,
+            "regret_reason": "Financial stress, depreciation, could have invested money instead",
+            "pattern_tags": [
+                "financial",
+                "status",
+                "materialism"
+            ],
+            "decision_category": "financial",
+            "source_post_id": "sample20",
+            "source_subreddit": "regret",
+            "original_score": 670
+        },
+        {
+            "age_when_decided": 31,
+            "age_when_regret_felt": 40,
+            "decision_made": "Didn't pursue passion project",
+            "situation_context": "Had idea for business/creative project but never started",
+            "regret_severity": 6,
+            "regret_reason": "Always wonder 'what if', someone else did similar thing successfully",
+            "pattern_tags": [
+                "career",
+                "passion",
+                "fear-of-failure"
+            ],
+            "decision_category": "career",
+            "source_post_id": "sample21",
+            "source_subreddit": "regret",
+            "original_score": 1100
+        },
+        {
+            "age_when_decided": 23,
+            "age_when_regret_felt": 29,
+            "decision_made": "Chose graduate school over work experience",
+            "situation_context": "Got master's degree instead of gaining practical experience",
+            "regret_severity": 5,
+            "regret_reason": "Degree didn't help career, more debt, peers with experience advanced faster",
+            "pattern_tags": [
+                "education",
+                "career",
+                "debt"
+            ],
+            "decision_category": "education",
+            "source_post_id": "sample22",
+            "source_subreddit": "careerguidance",
+            "original_score": 1350
+        },
+        {
+            "age_when_decided": 27,
+            "age_when_regret_felt": 35,
+            "decision_made": "Didn't stand up to workplace bullying",
+            "situation_context": "Endured toxic boss and workplace for years",
+            "regret_severity": 7,
+            "regret_reason": "Damaged mental health, should have left or reported earlier",
+            "pattern_tags": [
+                "career",
+                "mental-health",
+                "boundaries"
+            ],
+            "decision_category": "career",
+            "source_post_id": "sample23",
+            "source_subreddit": "careerguidance",
+            "original_score": 2400
+        },
+        {
+            "age_when_decided": 20,
+            "age_when_regret_felt": 35,
+            "decision_made": "Didn't learn second language",
+            "situation_context": "Had opportunities to become bilingual but didn't prioritize it",
+            "regret_severity": 4,
+            "regret_reason": "Would have opened career and personal opportunities",
+            "pattern_tags": [
+                "education",
+                "skills",
+                "opportunities"
+            ],
+            "decision_category": "education",
+            "source_post_id": "sample24",
+            "source_subreddit": "AskOldPeople",
+            "original_score": 890
+        },
+        {
+            "age_when_decided": 29,
+            "age_when_regret_felt": 33,
+            "decision_made": "Bought house at peak of market",
+            "situation_context": "Felt pressure to buy, purchased at inflated prices",
+            "regret_severity": 6,
+            "regret_reason": "Underwater on mortgage when market crashed, financially trapped",
+            "pattern_tags": [
+                "financial",
+                "housing",
+                "timing"
+            ],
+            "decision_category": "financial",
+            "source_post_id": "sample25",
+            "source_subreddit": "regret",
+            "original_score": 1700
+        }
+    ]
+}
