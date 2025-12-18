@@ -199,6 +199,10 @@ def trigger_extraction():
 @app.route('/<path:path>')
 def serve(path):
     """Serve React frontend"""
+    # Don't serve API routes
+    if path.startswith('api/'):
+        return jsonify({'error': 'Not found'}), 404
+    
     if path != "" and os.path.exists(os.path.join(app.static_folder, path)):
         return send_from_directory(app.static_folder, path)
     else:
